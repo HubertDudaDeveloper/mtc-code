@@ -7016,14 +7016,70 @@ function carousel() {
 }
 var _default = carousel;
 exports.default = _default;
+},{}],"js/opinions.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+function opinions() {
+  var id = 0;
+  var opinionItem = document.querySelectorAll('.opinions__article');
+  var scroll = function scroll(id) {
+    return opinionItem[id].scrollIntoView({
+      behavior: 'smooth',
+      block: 'nearest',
+      inline: 'center'
+    });
+  };
+  document.getElementById('arrow-next').addEventListener('click', function () {
+    id = (id + 1) % opinionItem.length;
+    scroll(id);
+  });
+  document.getElementById('arrow-before').addEventListener('click', function () {
+    id--;
+    if (id < 0) {
+      id = opinionItem.length - 1;
+    }
+    scroll(id);
+  });
+}
+var _default = opinions;
+exports.default = _default;
+},{}],"js/menu.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+function menu() {
+  document.getElementById('mainNav_button').addEventListener('click', function () {
+    document.getElementById('mainNav').classList.toggle('nav');
+    document.getElementById('mainNav').classList.toggle('nav--mobile');
+  });
+}
+var _default = menu;
+exports.default = _default;
 },{}],"js/main.js":[function(require,module,exports) {
 'use strict';
 
 require("bootstrap");
 var _carousel = _interopRequireDefault(require("./carousel"));
+var _opinions = _interopRequireDefault(require("./opinions"));
+var _menu = _interopRequireDefault(require("./menu"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+(0, _opinions.default)();
 (0, _carousel.default)();
-},{"bootstrap":"../node_modules/bootstrap/dist/js/bootstrap.esm.js","./carousel":"js/carousel.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+(0, _menu.default)();
+
+// Added dark menu on scroll
+window.onscroll = function () {
+  document.documentElement.scrollTop > 50 && document.getElementById('mainNav').classList.add('dark');
+  document.documentElement.scrollTop < 50 && document.getElementById('mainNav').classList.remove('dark');
+};
+},{"bootstrap":"../node_modules/bootstrap/dist/js/bootstrap.esm.js","./carousel":"js/carousel.js","./opinions":"js/opinions.js","./menu":"js/menu.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -7048,7 +7104,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57251" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51453" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

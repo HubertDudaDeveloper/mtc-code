@@ -1,6 +1,19 @@
 .opinions
-    max-height: 600px
     height: 100vh
+    max-width: 100vw
     background: $light-inactive
+    &__arrow-left
+        margin-bottom: -120px
+    &__arrow-right
+        margin-top: 0px  
+    &__container
+        margin: 0px 90px
     &__article
         text-align: center
+@media screen and (min-width: 768)
+    .opinions
+        max-height: 600px
+        &__arrow-left
+            margin-bottom: 0px
+        &__arrow-right
+            margin-top: 0px

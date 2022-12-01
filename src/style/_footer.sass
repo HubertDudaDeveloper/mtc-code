@@ -1,5 +1,27 @@
 .footer
     max-height: 100vh
-    height: 495px
+    height: 100vh
+    z-index: 106
+    &__img
+        height: 100vh
+        -o-object-fit: cover
+        object-fit: cover
+        -o-object-position: 50% 0%
+        object-position: 50% 0%
+
+    &__copyright
+        color: $body-text
     &__container
-        background: black
+        background: #000000e6
+        
+        & div.border-bottom
+            max-width: 1300px
+            opacity: 0.2
+            border-bottom: 1px solid $body-text !important
+@media screen and (min-width: 768px)
+    .footer
+        height: 495px !important
+        &__img
+            height: 100%
+            -o-object-fit: none
+            object-fit: none

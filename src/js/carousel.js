@@ -39,7 +39,7 @@ function carousel () {
 	const carouselItem = document.querySelectorAll('.carousel__container')
 	const thumb = document.querySelectorAll('.thumb')
 	const scroll = (id) => carouselItem[id].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
-	
+
 	thumb[0].style.background = '#D4B254'
 
 	for (let i = 0; i < thumb.length; i++) {
