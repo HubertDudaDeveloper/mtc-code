@@ -7,14 +7,15 @@
 <script src="/style.493e6e98.js"></script></head>
 <body class="d-flex flex-column justify-content-center align-items-center">
   
-  <nav id="mainNav" class="nav col-12 align-self-center position-fixed">
-    <i id="mainNav_button" class="bi bi-three-dots-vertical text-white btn__menu p-4 d-md-none col-12 position-fixed"></i>
-    <ul class="nav__list d-flex position-fixed flex-column flex-md-row justify-content-center align-items-center col-12 p-5 gap-4">
-      <li class="nav__list-item d-none d-md-flex justify-content-center align-self-center col-12 col-md-1"><a class="bi bi-facebook text-white"></a> <a class="bi bi-twitter text-white"></a> <a class="bi bi-instagram text-white"></a></li>
-      <li class="nav__list-item d-none d-md-flex justify-content-center align-self-center col-12 col-md-1">shop </li>
-      <li class="nav__list-item d-none d-md-flex justify-content-center align-self-center col-12 col-md-1">plan my kitchen </li>
-      <li class="nav__list-item d-flex justify-content-center order-first order-md-0 d-flex col-2 align-self-center justify-content-center">
+  <nav id="mainNav" class="nav align-self-center position-fixed justify-content-center">
+    <i id="mainNav_button" class="bi bi-three-dots-vertical text-white btn__menu p-4 d-lg-none col-12 position-fixed"></i>
+    <ul class="nav__list d-flex position-fixed flex-column flex-lg-row justify-content-center align-items-center col-10 p-5 gap-5">
+      <li class="nav__list-item d-none d-lg-flex justify-content-center align-self-center col-12"><a class="bi bi-facebook text-white"></a> <a class="bi bi-twitter text-white"></a> <a class="bi bi-instagram text-white"></a></li>
+      <li class="nav__list-item d-none d-lg-flex justify-content-center align-self-center col-12"><a>shop</a> </li>
+      <li class="nav__list-item d-none d-lg-flex justify-content-center align-self-center col-12"><a>plan my kitchen</a> </li>
+      <li class="nav__list-item d-flex justify-content-center order-first order-lg-0 d-flex col-8 col-md-2 align-self-center justify-content-center">
         <svg class="dark_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="298.351" height="59.33" viewBox="0 0 298.351 59.33">
+          <a>
           <defs>
             <clipPath id="clip-path">
               <path id="Clip_2" data-name="Clip 2" d="M0,0H28.01V32.274H0Z" transform="translate(0.126 0.205)" fill="none"></path>
@@ -56,9 +57,11 @@
             <path id="Fill_38" data-name="Fill 38" d="M0,13.753V0H9.784V.943H1.022v5.4H8.9v.943H1.022v5.52h8.86v.943Z" transform="translate(271.429 45.807)" fill="#fff"></path>
             <path id="Fill_39" data-name="Fill 39" d="M10.668,13.753.982,1.533v12.22H0V0H.963l9.489,11.965V0h.982V13.753Z" transform="translate(286.917 45.807)" fill="#fff"></path>
           </g>
+        </a>
         </svg>
         
-        <svg class="light_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="83.506" height="32.687" viewBox="0 0 83.506 32.687">
+        <svg class="light_logo col-6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="83.506" height="32.687" viewBox="0 0 83.506 32.687">
+        <a>
           <defs>
             <clipPath id="clip-path">
               <path id="Clip_2" data-name="Clip 2" d="M0,0H28.01V32.274H0Z" transform="translate(0.126 0.205)" fill="none"></path>
@@ -82,20 +85,31 @@
                 <path id="Fill_8" data-name="Fill 8" d="M26.59,14.777a.212.212,0,0,0-.278.114l-1.562,3.04c-1.355,2.637-2.773,3.749-4.336.714v0L11.552,0H0V.78A5.614,5.614,0,0,1,5.18,3.943L18.8,32.687h.78l.732-1.825,6.4-15.813a.212.212,0,0,0-.116-.273" transform="translate(0.282 0.205)" fill="#fff"></path>
               </g>
             </g>
-          </g>
+          </g></a>
         </svg>
     </li>
-    <li class="nav__list-item d-none justify-content-center  d-md-flex align-self-center col-12 col-md-1">about us</li>
-    <li class="nav__list-item d-none justify-content-center  d-md-flex align-self-center col-12 col-md-1">gallery</li>
-    <li class="nav__list-item d-none justify-content-center  d-md-flex align-self-center col-12 col-md-1">my orders</li>      
-    </ul>
+    <li class="nav__list-item d-none justify-content-center d-lg-flex align-self-center col-12"><a>about us</a></li>
+    <li class="nav__list-item d-none justify-content-center d-lg-flex align-self-center col-12"><a>gallery</a></li>
+    <li class="nav__list-item d-none justify-content-center d-lg-flex align-self-center col-12 btn rounded-5"><a>my orders<i class="bi bi-cart"></i></a></li>
+  </ul>
+    <div class="menu__border"></div>
   </nav>
 
-  <main>
+  <main id="main">
 
     <section class="carousel d-flex flex-row col-12 border-bottom">
       <article class="carousel__container d-flex flex-column justify-content-center align-items-center col-12">
-        <img src="/Bitmap.ba0e0173.jpg" alt="Kitchen slider" class="carousel__img col-12">
+        <img src="/Bitmap.ba0e0173.jpg" alt="Kitchen" class="carousel__img col-12">
+        <section class="position-absolute d-flex flex-column justify-content-center align-items-center col-12">
+          <header class="col-md-4">
+            <p class="carousel__item p">design and order your new kitchen online today</p>
+            <h2 class="display-5 carousel__item">Bespoke &amp; made to measure handmade kitchen design</h2>\
+          </header>
+          <button class="btn btn--highlight carousel__item rounded-5">order now</button>
+        </section>
+      </article>
+      <article class="carousel__container d-flex flex-column justify-content-center align-items-center col-12">
+        <img src="/Bitmap.ba0e0173.jpg" alt="Kitchen" class="carousel__img col-12">
         <section class="position-absolute d-flex flex-column justify-content-center align-items-center col-12">
           <header class="col-md-4">
             <p class="carousel__item">design and order your new kitchen online today</p>
@@ -105,17 +119,7 @@
         </section>
       </article>
       <article class="carousel__container d-flex flex-column justify-content-center align-items-center col-12">
-        <img src="/Bitmap.ba0e0173.jpg" alt="Kitchen slider" class="carousel__img col-12">
-        <section class="position-absolute d-flex flex-column justify-content-center align-items-center col-12">
-          <header class="col-md-4">
-            <p class="carousel__item">design and order your new kitchen online today</p>
-            <h2 class="display-5 carousel__item">Bespoke &amp; made to measure handmade kitchen design</h2>\
-          </header>
-          <button class="btn btn--highlight carousel__item rounded-5">order now</button>
-        </section>
-      </article>
-      <article class="carousel__container d-flex flex-column justify-content-center align-items-center col-12">
-        <img src="/Bitmap.ba0e0173.jpg" alt="Kitchen slider" class="carousel__img col-12">
+        <img src="/Bitmap.ba0e0173.jpg" alt="Kitchen" class="carousel__img col-12">
         <section class="position-absolute d-flex flex-column justify-content-center align-items-center col-12">
           <header class="col-md-4">
             <p class="carousel__item">design and order your new kitchen online today</p>
@@ -132,15 +136,15 @@
       <span class="thumb"></span>
     </div>
 
-    <section class="col-12 d-flex flex-column-reverse flex-md-row">
-      <img src="/Bitmap1.8800ed05.jpg" class="col-md-6 col-12">
-      <article class="col-md-4 d-flex justify-content-center align-items-start flex-column p-5">
+    <section class="article col-12 d-flex flex-column-reverse flex-md-row gap-5">
+      <img src="/Bitmap1.8800ed05.jpg" alt="Light kitchen" class="col-md-6 col-12">
+      <article class="article-item col-md-4 d-flex justify-content-center align-items-start flex-column p-4 position-relative">
         <header>
-          <p>Quality Craftmanship from build to delivery</p>
-          <h2>Discover the beauty of a
-            handmade kitchen</h2>
+          <p class="mb-0">Quality Craftmanship from build to delivery</p>
+          <h2 class="display-6"><strong>Discover the beauty of a
+            handmade kitchen</strong></h2>
         </header>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget est sit amet sapien venenatis maximus vel in urna. Nam mauris arcu, feugiat in finibus vitae, sollicitudin id purus. Ut imperdiet, magna eu pharetra tincidunt, mauris purus ultrices.</p>
+        <p class="pg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget est sit amet sapien venenatis maximus vel in urna. Nam mauris arcu, feugiat in finibus vitae, sollicitudin id purus. Ut imperdiet, magna eu pharetra tincidunt, mauris purus ultrices.</p>
         <button class="btn btn--highlight rounded-5">About us</button>
       </article>
     </section>
@@ -189,18 +193,18 @@
     
     <section class="gallery col-12 d-flex flex-column justify-content-center align-items-center">
       <h3>Customer Gallery</h3>
-      <section class="gallery__container col-lg-8 col-md-10 d-flex flex-wrap flex-row justify-content-center align-items-center flex-md-row gap-4">
-        <img class="col-5 col-md-3" src="/Bitmap3.5cdd7fc2.jpg">
-        <img class="col-5 col-md-3" src="/Bitmap2.356ea5eb.jpg">
-        <img class="col-5 col-md-3" src="/Bitmap5.a05739ce.jpg">
-        <img class="col-5 col-md-3" src="/Bitmap4.49b8ac9a.jpg">
+      <section class="gallery__container col-lg-8 col-md-10 d-flex flex-wrap flex-row justify-content-center align-items-center flex-md-row">
+        <img alt="Retro kitchen" class="col-5 col-md-3 gallery__image" src="/Bitmap3.5cdd7fc2.jpg">
+        <img alt="Minimalist kitchen" class="col-5 col-md-3 gallery__image" src="/Bitmap2.356ea5eb.jpg">
+        <img alt="Childlish kitchen" class="col-5 col-md-3 gallery__image" src="/Bitmap5.a05739ce.jpg">
+        <img alt="White kitchen" class="col-5 col-md-3 gallery__image" src="/Bitmap4.49b8ac9a.jpg">
       </section>
-      <button class="btn btn--highlight rounded-5">See more</button>
+      <button class="btn btn--highlight rounded-5">View more</button>
     </section>
   </main>
 
   <footer class="footer position-relative col-12 d-flex flex-column">
-    <img src="/Bitmap6.b89299c0.jpg" class="footer__img col-12">
+    <img src="/Bitmap6.b89299c0.jpg" alt="" class="footer__img col-12">
     <section class="footer__container position-absolute d-flex flex-column col-12 h-100 justify-content-evenly align-items-center">
       <svg class="col-12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1300" height="32.687" viewBox="0 0 1300 32.687">
         <defs>
@@ -232,36 +236,44 @@
           </g>
         </g>
       </svg>
-      <section class="d-flex col-10 col-md-6 text-white flex-wrap">
-        <dl class="col-3">
-          <dt class="mb-4">About</dt>
+      <section class="d-flex col-10 col-md-5 text-white flex-wrap">
+        <dl class="footer__list about col-3">
+          <dt class="footer__list-title  mb-4">About</dt>
           <dd><a>shop</a></dd>
           <dd><a>plan my kitchen</a></dd>
           <dd><a>about us</a></dd>
           <dd><a>gallery</a></dd>
         </dl>
-        <dl class="col-3">
-          <dt class="mb-4">Service</dt>
+        <dl class="footer__list service col-3">
+          <dt class="footer__list-title  mb-4">Service</dt>
           <dd><a>FAQ</a></dd>
           <dd><a>contact</a></dd>
           <dd><a>how to buy</a></dd>
           <dd><a>downloads</a></dd>
         </dl>
-        <dl class="col-3">
-          <dt class="mb-4">Info</dt>
+        <dl class="footer__list info col-3">
+          <dt class="footer__list-title  mb-4">Info</dt>
           <dd><a>delivery</a></dd>
           <dd><a>terms</a></dd>
           <dd><a>privacy</a></dd>
         </dl>
-        <dl class="col-3">
-          <dt class="mb-4">Follow</dt>
-          <dd><a class="bi bi-facebook"></a></dd>
-          <dd><a class="bi bi-twitter"></a></dd>
-          <dd><a class="bi bi-instagram"></a></dd>
-        </dl>
-      </section>
+        <dl class="footer__list follow col-3">
+          <dt class="footer__list-title  mb-4">Follow</dt>
+            <section class="social-media d-flex gap-3 gap-md-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                <path id="Combined_Shape" data-name="Combined Shape" d="M20,40A20.005,20.005,0,0,1,12.215,1.572a20.005,20.005,0,0,1,15.57,36.856A19.875,19.875,0,0,1,20,40ZM15,17.75v3.2h2.706V29h3.3V20.949h2.567L24,17.75H21.011V15.535a1.809,1.809,0,0,1,.282-1.125,1.64,1.64,0,0,1,1.3-.421h1.688V11.14A17.528,17.528,0,0,0,21.82,11a4.093,4.093,0,0,0-2.989,1.108,4.187,4.187,0,0,0-1.125,3.111V17.75Z" transform="translate(0 0)" fill="#fff"></path>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                <path id="Combined_Shape" data-name="Combined Shape" d="M20,40A20.005,20.005,0,0,1,12.215,1.572a20.005,20.005,0,0,1,15.57,36.856A19.875,19.875,0,0,1,20,40ZM10,27.967h0A12.672,12.672,0,0,0,16.966,30a12.544,12.544,0,0,0,7.053-2.033,12.414,12.414,0,0,0,4.37-4.89A12.884,12.884,0,0,0,29.9,17.062a2.6,2.6,0,0,0-.043-.562,10.014,10.014,0,0,0,2.293-2.38,9.781,9.781,0,0,1-2.6.735,4.523,4.523,0,0,0,1.99-2.509,9.27,9.27,0,0,1-2.9,1.082,5.151,5.151,0,0,0-1.492-1.039,4.362,4.362,0,0,0-1.84-.39,4.418,4.418,0,0,0-2.25.606,4.474,4.474,0,0,0-1.644,1.666,4.535,4.535,0,0,0-.606,2.272,6.336,6.336,0,0,0,.086,1.039,12.706,12.706,0,0,1-9.346-4.759,4.407,4.407,0,0,0-.086,4.457,5.059,5.059,0,0,0,1.471,1.644,4.3,4.3,0,0,1-2.033-.606V18.4a4.374,4.374,0,0,0,1.039,2.856,4.6,4.6,0,0,0,2.6,1.6,5.807,5.807,0,0,1-1.211.13c-.259,0-.535-.015-.822-.043a4.537,4.537,0,0,0,1.579,2.228,4.248,4.248,0,0,0,2.661.887,9.044,9.044,0,0,1-5.668,1.948C10.68,28.01,10.317,28,10,27.967Z" transform="translate(0 0)" fill="#fff"></path>
+              </svg>            
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                <path id="Combined_Shape" data-name="Combined Shape" d="M20,40A20.005,20.005,0,0,1,12.215,1.572a20.005,20.005,0,0,1,15.57,36.856A19.875,19.875,0,0,1,20,40Zm0-29c-1.731,0-2.995.02-3.757.06a7.672,7.672,0,0,0-1.989.341A4.706,4.706,0,0,0,11.4,14.254a7.672,7.672,0,0,0-.341,1.989C11.02,17.005,11,18.269,11,20s.02,2.995.06,3.757a7.669,7.669,0,0,0,.341,1.989,4.714,4.714,0,0,0,1.105,1.748,4.305,4.305,0,0,0,1.748,1.065,6.6,6.6,0,0,0,1.989.382c.745.04,2.009.06,3.757.06s3.011-.02,3.757-.06a7.635,7.635,0,0,0,1.989-.341A4.706,4.706,0,0,0,28.6,25.745a7.635,7.635,0,0,0,.341-1.989c.04-.745.06-2.009.06-3.757s-.014-2.993-.041-3.737a8.162,8.162,0,0,0-.361-2.009A4.706,4.706,0,0,0,25.745,11.4a7.669,7.669,0,0,0-1.989-.341C22.994,11.02,21.73,11,20,11Zm.643,16.393H19.357c-1.055,0-1.893-.013-2.491-.04a8.511,8.511,0,0,1-2.17-.322A3.062,3.062,0,0,1,12.968,25.3a8.56,8.56,0,0,1-.321-2.17c-.026-.6-.04-1.435-.04-2.491V19.357c0-1.055.013-1.893.04-2.491a8.162,8.162,0,0,1,.321-2.17A2.926,2.926,0,0,1,14.7,12.968a8.571,8.571,0,0,1,2.17-.321c.6-.026,1.436-.04,2.491-.04h1.285c1.056,0,1.894.013,2.491.04a8.152,8.152,0,0,1,2.17.321A2.918,2.918,0,0,1,27.031,14.7a8.106,8.106,0,0,1,.322,2.17c.026.57.04,1.408.04,2.491v1.285c0,1.056-.013,1.894-.04,2.491a8.5,8.5,0,0,1-.322,2.17A3.052,3.052,0,0,1,25.3,27.031a8.1,8.1,0,0,1-2.17.322C22.564,27.379,21.726,27.392,20.642,27.392ZM20,15.379a4.523,4.523,0,0,0-2.31.623A4.653,4.653,0,0,0,16,17.689a4.6,4.6,0,0,0,0,4.621A4.647,4.647,0,0,0,17.689,24a4.6,4.6,0,0,0,4.621,0A4.642,4.642,0,0,0,24,22.31a4.6,4.6,0,0,0,0-4.621A4.647,4.647,0,0,0,22.31,16,4.523,4.523,0,0,0,20,15.379Zm4.821-1.286a1.085,1.085,0,0,0,0,2.17.982.982,0,0,0,.743-.321,1.25,1.25,0,0,0,.341-.763,1.1,1.1,0,0,0-1.084-1.085ZM20,23.013a3.017,3.017,0,1,1,2.129-.884A2.915,2.915,0,0,1,20,23.013Z" transform="translate(0 0)" fill="#fff"></path>        
+              </svg>
+            </section>
+          </dl>
+        </section>
       <small class="col-10 col-md-3 footer__copyright text-center p-3">
-        Copyright Online MTC Home Kitchens 2018 - All rights reserved.
+        Copyright Online MTC Home Kitchens 2018 - All rights reserved.<br>
         Responsive website design, Development & Hosting by mtc.
       </small>
       <div class="col-8 border-bottom"></div>

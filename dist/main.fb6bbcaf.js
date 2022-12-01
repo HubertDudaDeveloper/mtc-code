@@ -7062,6 +7062,31 @@ function menu() {
 }
 var _default = menu;
 exports.default = _default;
+},{}],"js/lightbox.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+function lightbox() {
+  document.querySelectorAll('.gallery__image').forEach(function (item, index) {
+    item.addEventListener('click', function (event) {
+      console.log(event);
+      var main = document.getElementById('main');
+      event.target.style += 'object-fit: contain; position: fixed; z-index: 999; top: 30vh; left 50%; pointer-events: none';
+      var shadow = document.createElement('div');
+      shadow.classList += 'shadow__image';
+      shadow.addEventListener('click', function () {
+        event.target.style -= 'object-fit: contain; position: fixed; z-index: 999; top: 30vh; left 50%; pointer-events: none';
+        shadow.classList = '';
+      });
+      main.prepend(shadow);
+    });
+  });
+}
+var _default = lightbox;
+exports.default = _default;
 },{}],"js/main.js":[function(require,module,exports) {
 'use strict';
 
@@ -7069,17 +7094,19 @@ require("bootstrap");
 var _carousel = _interopRequireDefault(require("./carousel"));
 var _opinions = _interopRequireDefault(require("./opinions"));
 var _menu = _interopRequireDefault(require("./menu"));
+var _lightbox = _interopRequireDefault(require("./lightbox"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 (0, _opinions.default)();
 (0, _carousel.default)();
 (0, _menu.default)();
+(0, _lightbox.default)();
 
 // Added dark menu on scroll
 window.onscroll = function () {
   document.documentElement.scrollTop > 50 && document.getElementById('mainNav').classList.add('dark');
   document.documentElement.scrollTop < 50 && document.getElementById('mainNav').classList.remove('dark');
 };
-},{"bootstrap":"../node_modules/bootstrap/dist/js/bootstrap.esm.js","./carousel":"js/carousel.js","./opinions":"js/opinions.js","./menu":"js/menu.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"bootstrap":"../node_modules/bootstrap/dist/js/bootstrap.esm.js","./carousel":"js/carousel.js","./opinions":"js/opinions.js","./menu":"js/menu.js","./lightbox":"js/lightbox.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

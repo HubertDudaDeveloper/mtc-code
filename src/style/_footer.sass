@@ -2,6 +2,8 @@
     max-height: 100vh
     height: 100vh
     z-index: 106
+    position: relative
+    bottom: -4px
     &__img
         height: 100vh
         -o-object-fit: cover
@@ -21,7 +23,43 @@
 @media screen and (min-width: 768px)
     .footer
         height: 495px !important
+        &__list
+            position: relative
+            bottom: -5px
+            &.about
+                right: 13px
+                letter-spacing: 0px    
+            &.info
+                left: 11px
+                letter-spacing: 0px
+            &.follow
+                left: 22px
+                letter-spacing: 0px
+            &-title
+                font-size: 24px
+                font-weight: 400
+                position: relative
+                bottom: 3px
+                
+            & dd
+                font-weight: 400
+                text-transform: uppercase
+                font-size: 13px
+                letter-spacing: 3px
+                line-height: 22px
+                position: relative
+                bottom: -3px
+        & .social-media
+            position: relative 
+            gap: 15px !important
+            bottom: -10px
         &__img
             height: 100%
             -o-object-fit: none
             object-fit: none
+        small
+            width: 500px
+            position: relative
+            bottom: 26px
+            letter-spacing: -0.5px
+            line-height: 26px

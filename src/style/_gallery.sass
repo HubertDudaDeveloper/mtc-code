@@ -1,7 +1,45 @@
 .gallery
     height: 100vh
+    max-height: 100vh
     &__container
         margin: 37px 0px 40px 0px
-@media screen and (min-width: 768)
+        gap: 20px
+    &__image
+        transition: 0.5s
+        cursor: pointer
+        &:hover
+            opacity: 0.9
+.shadow__image
+    transition: 0.5s
+    position: fixed
+    height: 100vh
+    width: 100vw
+    background: rgba(0, 0, 0, 0.9019607843)
+    display: block
+    z-index: 998
+@media screen and (min-width: 1368px)
     .gallery
-        max-height: 673px
+        max-height: 673px !important
+        position: relative
+        &__image
+            width: 200px !important
+            height: 200px !important
+        & h3 
+            font-size: 34px
+            position: relative
+            font-weight: 400
+            letter-spacing: -0.8px
+        &__container
+            position: relative
+            bottom: 6px
+        & .btn
+            position: relative
+            bottom: 6px
+            padding: 0px 37px
+@media screen and (min-width: 1951px)
+    .gallery
+        max-height: 673px !important
+        position: relative
+        &__image
+            width: 310px !important
+            height: 310px !important

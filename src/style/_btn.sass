@@ -1,8 +1,22 @@
 .btn
+    transition: 0.5s
     &--highlight
         background: $highlight-button
+        color: $light-inactive
         height: 60px
         padding: 0px 58px
         font-size: 15px
         text-transform: uppercase
         letter-spacing: 3px
+        filter: drop-shadow(0px 2px 10px #00000033)
+        &:hover
+            background: #C8A74B
+            color:  $light-inactive
+    &--dark
+        background: #000000
+        color: $light-inactive
+        border: 1px solid $light-inactive
+        &:hover
+            background: $light-inactive
+            color: #000000
+            border: 1px solid #000000
